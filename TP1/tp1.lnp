@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\main.o"
+".\startup_stm32f10x_md.o"
+".\system_stm32f10x.o"
+--library_type=microlib --strict --scatter ".\tp1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\tp1.map" -o .\tp1.axf
